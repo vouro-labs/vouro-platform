@@ -203,8 +203,7 @@ export default function LandingPage() {
             Build What Can<br/>Be <span className="text-vouro-lime">Proven</span>.
           </h1>
           <p className="text-sm sm:text-lg text-vouro-muted font-sans max-w-2xl mx-auto mb-8 pointer-events-auto leading-relaxed">
-            Enter a living proof world where real missions create permanent reputation. 
-            Watch every verified contribution transform into blocks and vaults.
+            Enter a living proof world where real missions create permanent reputation. Watch every verified contribution transform into blocks and vaults.
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 pointer-events-auto">
