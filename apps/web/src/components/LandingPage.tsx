@@ -179,7 +179,7 @@ export default function LandingPage() {
             <GithubIcon className="w-5 h-5" />
           </a>
           <a
-            href="https://x.com/VouroLabs/photo"
+            href="https://x.com/VouroLabs"
             target="_blank"
             rel="noopener noreferrer"
             className="text-vouro-muted hover:text-vouro-lime transition p-1.5 flex items-center justify-center"
@@ -1105,7 +1105,7 @@ export default function LandingPage() {
             <GithubIcon className="w-5 h-5" />
           </a>
           <a
-            href="https://x.com/VouroLabs/photo"
+            href="https://x.com/VouroLabs"
             target="_blank"
             rel="noopener noreferrer"
             className="text-vouro-muted hover:text-vouro-lime transition p-1.5 flex items-center justify-center"
