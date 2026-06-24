@@ -6,11 +6,13 @@
   "scripts": {
     "dev": "concurrently -n \"web,api\" -c \"cyan,green\" \"pnpm --filter web dev\" \"pnpm --filter api dev\"",
     "build": "pnpm -r build",
-    "start": "pnpm --filter api start"
+    "start": "pnpm --filter api start",
+    "test": "vitest run"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
