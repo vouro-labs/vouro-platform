@@ -72,6 +72,8 @@ The VOURO program implements strict validators preventing fraudulent claims:
 
 ## OpenAPI / API Endpoint Index
 
+Production API Endpoint: `https://api.vouro.fun`
+
 The Fastify server exposes the following endpoints:
 
 | Method | Route | Description |
