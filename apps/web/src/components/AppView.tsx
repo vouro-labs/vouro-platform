@@ -1308,6 +1308,7 @@ export default function AppView() {
                   { id: 'db-schema', label: 'DB Schema' },
                   { id: 'websockets', label: 'WebSockets' },
                   { id: 'tutorials', label: 'Builder Guide' },
+                  { id: 'roadmap', label: 'Roadmap' },
                 ].map((t) => (
                   <button
                     key={t.id}
@@ -1563,6 +1564,71 @@ export default function AppView() {
                       <p className="text-vouro-muted">
                         If your browser experiences frame rate drops below 30 FPS inside the 3D Voxel Viewport, the built-in diagnostic engine displays a warning banner instructing you to close background processes, reduce rendering distance, or toggle off complex shader elements.
                       </p>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* SUB TAB 5: ROADMAP */}
+              {docSubTab === 'roadmap' && (
+                <div className="space-y-6">
+                  <div>
+                    <h3 className="text-lg font-heading font-bold text-vouro-lime uppercase">VOURO ROADMAP & FUTURE STRATEGY</h3>
+                    <p className="text-xs text-vouro-muted mt-1 font-sans">Multi-phase plan to scale VOURO into a fully decentralized autonomous developer coordination layer.</p>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-mono text-xs">
+                    {/* Phase 1 */}
+                    <div className="border border-vouro-ground p-4 space-y-2 bg-vouro-ground/20">
+                      <div className="flex justify-between items-center border-b border-vouro-ground pb-2">
+                        <span className="font-bold text-vouro-lime uppercase">Phase 1: Core Protocol (Q3 2026)</span>
+                        <span className="text-[9px] px-1.5 py-0.5 border border-vouro-lime/30 text-vouro-lime bg-vouro-lime/5 font-sans font-bold">ACTIVE</span>
+                      </div>
+                      <ul className="list-disc pl-4 space-y-1.5 text-vouro-muted text-[11px] font-sans pt-1">
+                        <li>Monorepo Workspace structure with pnpm links.</li>
+                        <li>Interactive 3D Voxel World city rendering in WebGL.</li>
+                        <li>Sybil-guard transaction validation using RPC signature checking.</li>
+                        <li>Dynamic dashboard with empty state cards and REST integration.</li>
+                      </ul>
+                    </div>
+
+                    {/* Phase 2 */}
+                    <div className="border border-vouro-ground p-4 space-y-2 bg-vouro-ground/20">
+                      <div className="flex justify-between items-center border-b border-vouro-ground pb-2">
+                        <span className="font-bold text-vouro-cyan uppercase">Phase 2: Decentralized Pipelines (Q4 2026)</span>
+                        <span className="text-[9px] px-1.5 py-0.5 border border-vouro-cyan/30 text-vouro-cyan bg-vouro-cyan/5 font-sans font-bold">UPCOMING</span>
+                      </div>
+                      <ul className="list-disc pl-4 space-y-1.5 text-vouro-muted text-[11px] font-sans pt-1">
+                        <li>Docker-based automated build validation for builder repository tests.</li>
+                        <li>Arbitration guilds for decentralized proof disputes.</li>
+                        <li>Dynamic voxel mutation to generate distinct structures based on contributions.</li>
+                      </ul>
+                    </div>
+
+                    {/* Phase 3 */}
+                    <div className="border border-vouro-ground p-4 space-y-2 bg-vouro-ground/20">
+                      <div className="flex justify-between items-center border-b border-vouro-ground pb-2">
+                        <span className="font-bold text-vouro-text/60 uppercase">Phase 3: Tokenomics (Q1 2027)</span>
+                        <span className="text-[9px] px-1.5 py-0.5 border border-vouro-ground text-vouro-muted bg-vouro-ground/30 font-sans font-bold">PLANNED</span>
+                      </div>
+                      <ul className="list-disc pl-4 space-y-1.5 text-vouro-muted text-[11px] font-sans pt-1">
+                        <li>Launch $VRO utility token for validators and stakers.</li>
+                        <li>District staking pools offering yield incentives.</li>
+                        <li>Reputation-weighted micro-grants and priority access.</li>
+                      </ul>
+                    </div>
+
+                    {/* Phase 4 */}
+                    <div className="border border-vouro-ground p-4 space-y-2 bg-vouro-ground/20">
+                      <div className="flex justify-between items-center border-b border-vouro-ground pb-2">
+                        <span className="font-bold text-vouro-text/60 uppercase">Phase 4: Scaling (Q2 2027)</span>
+                        <span className="text-[9px] px-1.5 py-0.5 border border-vouro-ground text-vouro-muted bg-vouro-ground/30 font-sans font-bold">PLANNED</span>
+                      </div>
+                      <ul className="list-disc pl-4 space-y-1.5 text-vouro-muted text-[11px] font-sans pt-1">
+                        <li>Cross-chain Wormhole bridge to verify EVM/L2 proofs.</li>
+                        <li>Enterprise Vaults for private corporate monorepos.</li>
+                        <li>Zero-knowledge proof integrations to preserve builder privacy.</li>
+                      </ul>
                     </div>
                   </div>
                 </div>

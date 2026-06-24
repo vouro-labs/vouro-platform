@@ -114,3 +114,30 @@ Deploy to **Render**, **Fly.io**, or **Heroku**:
    pnpm --filter api start
    ```
 3. Set up Redis server instance (`REDIS_URL`) and PostgreSQL database cluster (`DATABASE_URL`).
+
+---
+
+## 🗺️ Roadmap & Future Strategy
+
+VOURO is structured to evolve from a local monorepo prototype into an autonomous on-chain developer coordination layer. Below is the multi-phase deployment roadmap and strategic directions:
+
+### 📍 Phase 1: Core Protocol & Interactive Web (Q3 2026) — *Current Status*
+* **Monorepo Layout**: Complete client dashboard and Fastify endpoints using SQLite seed.
+* **Interactive 3D Voxel Engine**: Real-time rendering of districts and voxel cubes inside Three.js viewports.
+* **Helius & Solana Webhook Integration**: Idempotent event processor listening for SOL/USDC funding and claim transactions.
+* **Developer Docs & Dashboard Console**: Native system specs explorer embedded directly inside the builder application.
+
+### 📍 Phase 2: Decentralized Verification & Arbitration (Q4 2026)
+* **Programmatic Verification Engines**: Introduce automated Docker-based build verification containers. Creators upload verification scripts that compile builder repositories to check tests and static analysis.
+* **Arbitration Guilds**: Establish an on-chain dispute resolution framework where high-reputation validators (Stakers) verify rejected proofs in exchange for a fraction of the bounty.
+* **Dynamic Voxel Mutation Pipelines**: Enable builders' submissions to generate customized voxel assets (different colors, structures, or heights) reflecting the type of contribution (e.g. documentation, frontend, core smart contracts).
+
+### 📍 Phase 3: Tokenomics & On-chain District Vaults (Q1 2027)
+* **VOURO Governance Token ($VRO)**: Launch the protocol utility token to reward system validators and incentivize long-term builders.
+* **District Staking Pools**: Allow projects (Districts) to lock pools of SOL/USDC/VRO to yield continuous rewards for builders actively working on their missions.
+* **Reputation-based Borrowing & Grants**: Enable highly reputed Builders (based on proof history) to borrow development tools or claim priority grants without pre-allocation.
+
+### 📍 Phase 4: Cross-chain Expansion & Enterprise Adaptations (Q2 2027)
+* **EVM Proof Bridging**: Integrate Wormhole or Chainlink CCIP to accept proof keys from Ethereum/L2 networks while maintaining the state ledger on Solana.
+* **Enterprise Vault Solutions**: Launch self-hosted VOURO instances for private codebases, ensuring confidential proof validation with zero-knowledge (ZK) proofs.
+
