@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-vouro-bg text-vouro-text font-sans antialiased selection:bg-vouro-lime selection:text-vouro-bg;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold tracking-tight text-vouro-text;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #262626;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #FFFFFF;
+  }
+}
+
+@layer components {
+  .cyber-panel {
+    @apply bg-vouro-surface border border-vouro-ground relative overflow-hidden;
+  }
+
+  .cyber-panel::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #FFFFFF, transparent);
+    opacity: 0.4;
+  }
+
+  .btn-primary {
+    @apply bg-vouro-lime text-vouro-bg font-heading font-bold px-6 py-3 rounded-none transition-all duration-200 hover:shadow-[0_0_15px_rgba(255,255,255,0.4)] active:scale-95 disabled:opacity-50 disabled:pointer-events-none;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent text-vouro-lime border border-vouro-lime/30 font-heading font-semibold px-6 py-3 rounded-none transition-all duration-200 hover:bg-vouro-lime/10 hover:border-vouro-lime active:scale-95 disabled:opacity-50 disabled:pointer-events-none;
+  }
+
+  .btn-accent {
+    @apply bg-vouro-cyan text-vouro-bg font-heading font-bold px-6 py-3 rounded-none transition-all duration-200 hover:shadow-[0_0_15px_rgba(255,255,255,0.3)] active:scale-95;
+  }
+
+  .pixel-text {
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: -0.05em;
+  }
+
+  .scanline {
+    background: linear-gradient(
+      to bottom,
+      rgba(255,255,255,0),
+      rgba(255,255,255,0) 50%,
+      rgba(0, 0, 0, 0.3) 50%,
+      rgba(0, 0, 0, 0.3)
+    );
+    background-size: 100% 4px;
+  }
+}
+
+/* Animations */
+@keyframes pulse-cyan {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+.animate-pulse-cyan {
+  animation: pulse-cyan 2s infinite;
+}
+
+@keyframes grid-move {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(40px); }
+}
+
+.grid-bg-animated {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(38, 38, 38, 0.5) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(38, 38, 38, 0.5) 1px, transparent 1px);
+  animation: grid-move 4s linear infinite;
+}
+
+@keyframes slide-in-right {
+  0% { transform: translateX(100%); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Sci-fi Scanline sweeping effect */
+@keyframes scanline-sweep {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+.animate-scanline-sweep {
+  animation: scanline-sweep 3s linear infinite;
+}
+
+/* Sci-fi Radar spin */
+@keyframes radar-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-radar-spin {
+  animation: radar-spin 12s linear infinite;
+}
+
+/* Sci-fi Hologram floating */
+@keyframes hologram-float {
+  0%, 100% { transform: translateY(0) scale(1); filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.05)); }
+  50% { transform: translateY(-4px) scale(1.02); filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.2)); }
+}
+
+.animate-hologram-float {
+  animation: hologram-float 4s ease-in-out infinite;
+}
