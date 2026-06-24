@@ -2,8 +2,8 @@
 
 VOURO is a Solana-based Proof-to-Earn platform with an interactive 3D voxel city visual. It represents a decentralized network where developers and contributors (Builders) complete real missions, submit proof keys, and permanently build out the VOURO visual landscape on-chain.
 
-> **TAGLINE UTAMA:** Build What Can Be Proven.  
-> **TAGLINE PENDUKUNG:** Proof First. Reward After.
+> **MAIN TAGLINE:** Build What Can Be Proven.  
+> **SUPPORTING TAGLINE:** Proof First. Reward After.
 
 ---
 
